@@ -6,11 +6,11 @@ class Persona():
         self.__sexo=sexo
         super().__init__(añosPracticando)
 
-    def getNombre(self):
-        return self.__nombre
+    def getSexo(self):
+            return self.__sexo
 
-    def setNombre(self,nombre):
-        self.__nombre=nombre
+    def setSexo(self,sexo):
+        self.__sexo=sexo   
 
     def getEdad(self):
         return self.__edad
@@ -23,9 +23,12 @@ class Persona():
 
     def setAltura(self,altura):
         self.__altura=altura
-    
-    def getSexo(self):
-            return self.__sexo
 
-    def setSexo(self,sexo):
-        self.__sexo=sexo
+    def getNombre(self):
+        return self.__nombre
+
+    def setNombre(self,nombre):
+        self.__nombre=nombre
+
+    
+
