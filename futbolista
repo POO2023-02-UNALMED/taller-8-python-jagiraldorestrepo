@@ -1,18 +1,15 @@
 from deportista import Deportista
 from persona import Persona
-
-
 class Futbolista(Persona, Deportista):
     listaFutbolistas = []
 
     def __init__(self, nombre, edad, altura, sexo, añosPracticando, golesMarcados, tarjetasRojas, piernaHabil):
         Persona.__init__(self, nombre, edad, altura, sexo)
         Deportista.__init__(self, "Futbol", añosPracticando)
-        Futbolista.listaFutbolistas.append(self)
         self.__golesMarcados = golesMarcados
         self.__tarjetasRojas = tarjetasRojas
         self.__piernaHabil = piernaHabil
-       
+        Futbolista.listaFutbolistas.append(self)
 
     def getGolesMarcados(self):
         return self.__golesMarcados
